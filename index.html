@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>포트폴리오_김수정</title>
+
+    <link rel="stylesheet" href="css/~_~.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.css"
+        integrity="sha512-nNlU0WK2QfKsuEmdcTwkeh+lhGs6uyOxuUs+n+0oXSYDok5qy0EI0lt01ZynHq6+p/tbgpZ7P+yUb+r71wqdXg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="lib/carouselTicker.css" media="screen">
+
+    <script src="lib/jquery-3.7.0.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+
+        $(function () {
+            let mouse = document.querySelector('.mouse');
+
+            document.onmousemove = function (e) {
+                let mouseX = e.pageX;
+                let mouseY = e.pageY;
+
+                mouse.style.left = mouseX + 10 + 'px';
+                console.log(mouseX + 'px')
+                mouse.style.top = mouseY + 'px';
+
+            }//.onmousemove
+
+            /*    let a = $('a');
+   
+               a.mouseenter(function () {
+                  mouse.css.backgroundcolor = '#000'
+               });
+   
+               a.mouseleave(function () {
+                   
+               }) */
+
+            let gnb = document.querySelector('nav');
+            let gnbIndex = gnb.querySelectorAll('li');
+            let section = document.querySelectorAll('.section');
+
+            window.onscroll = function () {
+                let scrollBar = window.scrollY;
+
+                for (let i = 0; i < section.length; i++) {
+
+                    console.log(section[i].offsetTop)
+                    if (section[i].offsetTop <= scrollBar) {
+
+                        gnbIndex.forEach(function (item) {
+                            item.classList.remove('on')
+                        });
+
+                        gnbIndex[i].classList.add('on')
+                    } else if (scrollBar == 0) {
+                        gnbIndex.forEach(function (item) {
+                            item.classList.remove('on')
+                        });//gnbIndex.forEach
+                    }
+                }//for
+            }//.onscroll
+
+
+        });//jquery end
+    </script>
+</head>
+
+<body>
+    <div class="mouse"></div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#section0">portfolio</a></li>
+                <li><a href="#section1">introduce</a></li>
+                <li><a href="#section2">web portfolio</a></li>
+                <li><a href="#section3">graphic</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="section " id="section0">
+        <div class="circles" id="circles">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+        </div>
+
+        <div class="inner">
+            <div class="title">
+                <p>2023</p>
+                <h1>PORTFOLIO</h1>
+                <div class="ball"></div><!-- .ball end -->
+            </div><!-- .title end -->
+        </div><!-- .inner end -->
+
+    </div><!-- #section0 end -->
+
+
+    <div class="section" id="section1">
+        <div class="ball"></div>
+        <div class="inner">
+            <div class="title">
+                <h2>Introduce</h2>
+            </div><!-- .title end -->
+            <div class="me">
+                <figure>
+                    <img src="img/ㅍ ㄹ ㅍ 2.png" alt="프로필" />
+                </figure>
+                <div class="txt">
+                    <h3>김수정 <span>Kim su jeong</span></h3>
+                    <p>1999.11.19</p>
+
+                    <div class="call">
+                        <a href="tel:01076606905"><img src="img/전화.png" alt="전화" />010.7660.6905</a>
+                    </div><!-- .call end -->
+                    <div class="mail">
+                        <a href="mailto:1-_-68@naver.com"><img src="img/메일.png" alt="메일" />1-_-68@naver.com</a>
+                    </div><!-- .mail end -->
+                </div><!-- .txt end -->
+            </div><!-- .me end -->
+
+            <div class="list">
+                <div class="item">
+                    <div class="title">
+                        <div class="cir"></div><!-- .cir end -->
+                        <h3>학력사항</h3>
+                    </div><!-- .title end -->
+                    <div class="txt">
+                        <p>2023</p>
+                        <ul>
+                            <li>그린컴퓨터아카데미 인터렉티브 웹모션<br />
+                                UI/UX 퍼블리셔 실무인재 양성 과정 수료</li>
+                            <li>신라대학교 식품공학과 졸업</li>
+                        </ul>
+                    </div><!-- .txt end -->
+                    <div class="txt">
+                        <p>2018</p>
+                        <ul>
+                            <li>데레사여자고등학교 졸업</li>
+                        </ul>
+                    </div><!-- .txt end -->
+                </div><!-- .item end -->
+
+                <div class="item">
+                    <div class="title">
+                        <div class="cir"></div><!-- .cir end -->
+                        <h3>툴</h3>
+                    </div><!-- .title end -->
+                    <div class="tool">
+                        <div>
+                            <img src="img/html z.png" alt="html" />
+                            <img src="img/cdss.png" alt="css" />
+                            <img src="img/js.png" alt="js" />
+                            <img src="img/icons8-jquery-is-a-javascript-library-designed-to-simplify-html-96.png"
+                                alt="jquery" />
+                            <img src="img/pngwing.com (3).png" alt="react" />
+                        </div>
+                        <div>
+                            <img src="img/icons8-포토샵-144.png" alt="포토샵" />
+                            <img src="img/icons8-어도비-일러스트-레이터-144.png" alt="일러스트" />
+                            <img src="img/icons8-figma-144.png" alt="피그마" />
+                        </div>
+                    </div><!-- .tool end -->
+                </div><!-- .item end -->
+
+                <div class="item">
+                    <div class="title">
+                        <div class="cir"></div><!-- .cir end -->
+                        <h3>자격사항</h3>
+                    </div><!-- .title end -->
+                    <div class="txt">
+                        <p>2021</p>
+                        <ul>
+                            <li>자동차운전면허증 2종 보통</li>
+                        </ul>
+                    </div><!-- .txt end -->
+                </div><!-- .item end -->
+            </div><!-- .list end -->
+        </div><!-- .inner end -->
+
+    </div><!-- #section1 end -->
+
+    <div class="section" id="section2">
+        <div class="inner">
+            <div class="title">
+                <h2>Web portfolio</h2>
+            </div><!-- .title end -->
+
+            <div class="item">
+                <div class="left" data-aos="flip-down">
+                    <figure>
+                        <img src="img/니콘 목업.png" alt="니콘 목업" />
+                    </figure>
+                </div><!-- .left end -->
+                <div class="right" data-aos="fade-left">
+                    <div class="tit">
+                        <h1>니콘 이미징 코리아</h1>
+                    </div><!-- .title end -->
+                    <div class="txt">
+                        <strong>프로젝트</strong>
+                        <p>웹 사이트 리뉴얼(반응형)</p>
+                    </div><!-- txt end -->
+                    <div class="txt">
+                        <strong>사용언어</strong>
+                        <p>html, css, java script, photo shop</p>
+                    </div><!-- txt end -->
+                    <div class="txt">
+                        <strong>참여도</strong>
+                        <p>100% (개인작업)</p>
+                    </div><!-- txt end -->
+                    <div class="btn">
+                        <span><a href="https://168kg.github.io/nikon/" target="_blank">홈페이지</a></span>
+                        <span><a href="img/상세페이지/니콘_프로세스페이지.pdf" target="_blank">상세페이지</a></span>
+                    </div><!-- .btn end -->
+                </div><!-- .right end -->
+                <div class="back" data-aos="fade-right">
+                    <img src="img/니콘 배경.png" alt="니콘 배경" />
+                </div><!-- .back end -->
+            </div><!-- .item end -->
+
+            <div class="item">
+
+                <div class="right" data-aos="fade-right">
+                    <div class="tit">
+                        <h1>마녀공장</h1>
+                    </div><!-- .title end -->
+                    <div class="txt">
+                        <strong>프로젝트</strong>
+                        <p>웹 사이트 리뉴얼(반응형)</p>
+                    </div><!-- txt end -->
+                    <div class="txt">
+                        <strong>사용언어</strong>
+                        <p>html, css, java script</p>
+                    </div><!-- txt end -->
+                    <div class="txt">
+                        <strong>참여도</strong>
+                        <p>100% (코딩만)</p>
+                    </div><!-- txt end -->
+                    <div class="btn">
+                        <span><a href="https://168kg.github.io/manyo/" target="_blank">홈페이지</a></span>
+                        <span><a href="https://www.figma.com/file/0SNQTdyAz9VrzUcnWcPs7P/%EB%A7%88%EB%85%80%EA%B3%B5%EC%9E%A5?type=design&node-id=0-1&mode=design&t=rHiz7waWKxYIEGHS-0"
+                                target="_blank">피그마</a></span>
+                    </div><!-- .btn end -->
+                </div><!-- .right end -->
+
+                <div class="left" data-aos="flip-down">
+                    <figure>
+                        <img src="img/마녀공장 목업2.png" alt="마녀공장 목업" />
+                    </figure>
+                </div><!-- .left end -->
+                <div class="backk" data-aos="fade-left">
+                    <img src="img/마녀공장 배경.png" alt="마녀공장 배경" />
+                </div><!-- .back end -->
+            </div><!-- .item end -->
+
+            <div class="item">
+                <div class="left" data-aos="flip-down">
+                    <figure>
+                        <img src="img/부산목업최최최종.png" alt="부산 목업" />
+                    </figure>
+                </div><!-- .left end -->
+                <div class="right" data-aos="fade-left">
+                    <div class="tit">
+                        <h1>부산 관광명소</h1>
+                    </div><!-- .title end -->
+                    <div class="txt">
+                        <strong>프로젝트</strong>
+                        <p>부산 관광명소 소개 (모바일)</p>
+                    </div><!-- txt end -->
+                    <div class="txt">
+                        <strong>사용언어</strong>
+                        <p>html, css, react</p>
+                    </div><!-- txt end -->
+                    <div class="txt">
+                        <strong>참여도</strong>
+                        <p>100% (개인작업)</p>
+                    </div><!-- txt end -->
+                    <div class="btn">
+                        <span><a href="https://wonderful-crostata-fa8146.netlify.app/" target="_blank">홈페이지</a></span>
+                        <span><a href="img/상세페이지/부산관광명소 상세페이지.pdf" target="_blank">상세페이지</a></span>
+                    </div><!-- .btn end -->
+                </div><!-- .right end -->
+                <div class="back" data-aos="fade-right">
+                    <img src="img/부산관광 배경.png" alt="부산관광 배경" />
+                </div>
+            </div><!-- .item end -->
+
+            <div class="item">
+                <div class="right" data-aos="fade-right">
+                    <div class="tit">
+                        <h1>스투시 코리아</h1>
+                    </div><!-- .title end -->
+                    <div class="txt">
+                        <strong>프로젝트</strong>
+                        <p>웹 사이트 리뉴얼</p>
+                    </div><!-- txt end -->
+                    <div class="txt">
+                        <strong>사용언어</strong>
+                        <p>html, css, jquery, photo shop</p>
+                    </div><!-- txt end -->
+                    <div class="txt">
+                        <strong>참여도</strong>
+                        <p>100% (개인작업)</p>
+                    </div><!-- txt end -->
+                    <div class="btn">
+                        <span><a href="https://168kg.github.io/stussy/" target="_blank">홈페이지</a></span>
+                        <span><a href="img/상세페이지/스투시 상세페이지.pdf" target="_blank">상세페이지</a></span>
+                    </div><!-- .btn end -->
+                </div><!-- .right end -->
+
+                <div class="left" data-aos="flip-down">
+                    <figure>
+                        <img src="img/스투시 목업.png" alt="스투시 목업" />
+                    </figure>
+                </div><!-- .left end -->
+
+                <div class="backk" data-aos="fade-left">
+                    <img src="img/스투시 배경.png" alt="스투시 배경" />
+                </div>
+            </div><!-- .item end -->
+        </div><!-- .inner end -->
+    </div><!-- #section2 end -->
+
+    <div class="section" id="section3">
+        <div class="inner">
+            <div class="title">
+                <h2>Graphic</h2>
+            </div><!-- .title end -->
+
+        </div><!-- .inner end -->
+
+        <div id="carouselTicker-width-resize" class="carouselTicker">
+            <ul class="carouselTicker__list">
+                <li class="carouselTicker__item"><a href="img/디자인/1그린샐러드.jpg" data-fancybox="images">
+                        <img src="img/디자인/1그린샐러드.jpg" />
+                    </a></li>
+                <li class="carouselTicker__item"><a href="img/디자인/2하와이.jpg" data-fancybox="images">
+                        <img src="img/디자인/2하와이.jpg" />
+                    </a></li>
+                <li class="carouselTicker__item"> <a href="img/디자인/3muramasa.jpg" data-fancybox="images">
+                        <img src="img/디자인/3muramasa.jpg" />
+                    </a></li>
+                <li class="carouselTicker__item"><a href="img/디자인/4네일.jpg" data-fancybox="images">
+                        <img src="img/디자인/4네일.jpg" />
+                    </a></li>
+                <li class="carouselTicker__item"><a href="img/디자인/5오보에.jpg" data-fancybox="images">
+                        <img src="img/디자인/5오보에.jpg" />
+                    </a></li>
+                <li class="carouselTicker__item"><a href="img/디자인/6summer-sale.jpg" data-fancybox="images">
+                        <img src="img/디자인/6summer-sale.jpg" />
+                    </a></li>
+                <li class="carouselTicker__item"><a href="img/디자인/7이벤트.jpg" data-fancybox="images">
+                        <img src="img/디자인/7이벤트.jpg" />
+                    </a></li>
+                <li class="carouselTicker__item"><a href="img/디자인/8맥쥬파티.jpg" data-fancybox="images">
+                        <img src="img/디자인/8맥쥬파티.jpg" />
+                    </a></li>
+                <li class="carouselTicker__item"><a href="img/디자인/9타투.jpg" data-fancybox="images">
+                        <img src="img/디자인/9타투.jpg" />
+                    </a></li>
+                <li class="carouselTicker__item"><a href="img/디자인/10 기술서.jpg" data-fancybox="images">
+                        <img src="img/디자인/10 기술서.jpg" />
+                    </a></li>
+                <li class="carouselTicker__item"><a href="img/디자인/11 상품소개페이지.jpg" data-fancybox="images">
+                        <img src="img/디자인/11 상품소개페이지.jpg" />
+                    </a></li>
+                <li class="carouselTicker__item"><a href="img/디자인/배너1.jpg" data-fancybox="images">
+                        <img src="img/디자인/배너1.jpg" />
+                    </a></li>
+                <li class="carouselTicker__item"><a href="img/디자인/배너2.jpg" data-fancybox="images">
+                        <img src="img/디자인/배너2.jpg" />
+                    </a></li>
+                <li class="carouselTicker__item"><a href="img/디자인/배너3.jpg" data-fancybox="images">
+                        <img src="img/디자인/배너3.jpg" />
+                    </a></li>
+            </ul>
+
+        </div>
+
+    </div><!-- #section3 end -->
+
+    <footer>
+        <ul>
+            <li>본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</li>
+            <li>© 2023 Kim su jeong. All Rights Reserved.</li>
+        </ul>
+    </footer>
+    <script type="text/javascript" src="lib/jquery.carouselTicker.js"></script>
+    <script type="text/javascript" src="lib/start.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+</body>
+
+</html>
