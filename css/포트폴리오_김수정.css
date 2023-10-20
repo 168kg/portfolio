@@ -558,52 +558,12 @@ header nav ul li.on {
   position: relative;
 }
 
-/* #section3 .inner .list .item:hover .bf {
-  opacity: 1;
-  transition: 0.3s;
-} */
 
 #section3 .inner .list .item .bf img {
   width: 40px;
   height: 40px;
   object-fit: cover;
 }
-
-/* #section3 .inner .list .item .bf {
-  width: 100%;
-  height: 50px;
-  background-color: #000000ab;
-  backdrop-filter: blur(3px);
-  color: #fff;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  opacity: 0;
-  transition: 0.3s;
-} */
-
-
-/* #section3 .inner .list .item:hover::before {
-  opacity: 1;
-}
-
-#section3 .inner .list .item::before {
-  content: 'Ps';
-  color: #fff;
-  font-size: 30px;
-  text-align: center;
-  line-height: 40px;
-  width: 20%;
-  height: 40px;
-  border-radius: 50px;
-  background-color: rgba(0, 0, 0, 0.6);
-  backdrop-filter: blur(3px);
-  position: absolute;
-  bottom: 5px;
-  right: 5px;
-  transition: 0.3s;
-  opacity: 0;
-} */
 
 #section3 .inner .list .item img {
   width: 100%;
@@ -629,7 +589,7 @@ header nav ul li.on {
 
 #section3 .inner .bottom {
   display: flex;
-  margin-bottom: 70px;
+  margin: 70px 0;
 }
 
 #section3 .inner .bottom .item {
