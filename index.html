@@ -36,15 +36,23 @@
 
             }//.onmousemove
 
-            /*    let a = $('a');
-   
-               a.mouseenter(function () {
-                  mouse.css.backgroundcolor = '#000'
-               });
-   
-               a.mouseleave(function () {
-                   
-               }) */
+            let a = $('a');
+            let more = $('.more summary');
+            a.mouseover(function () {
+                mouse.style.backgroundColor = '#db45379c';
+            });
+
+            a.mouseleave(function () {
+                mouse.style.backgroundColor = '#acacac85';
+            })
+
+            more.mouseover(function () {
+                mouse.style.backgroundColor = '#db45379c';
+            })
+
+            more.mouseleave(function () {
+                mouse.style.backgroundColor = '#acacac85';
+            })
 
             let gnb = document.querySelector('nav');
             let gnbIndex = gnb.querySelectorAll('li');
@@ -357,7 +365,7 @@
                     <a href="img/디자인/1그린샐러드.jpg" data-fancybox="images">
                         <img src="img/디자인/1그린샐러드.jpg" />
                     </a>
-                   <!--  <div class="bf">
+                    <!--  <div class="bf">
                        <p></p>
                     </div> -->
                 </div><!-- .item end -->
