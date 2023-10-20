@@ -270,7 +270,7 @@ header nav ul li.on {
 #section1 {
   height: 100vh;
   /*  background-color: #eee; */
-  background: url("../img/배경.png") center center / cover no-repeat;
+  background: url("../img/배경11.png") center center / cover no-repeat;
 }
 
 #section1 .inner .title {
@@ -546,15 +546,64 @@ header nav ul li.on {
   margin: 30px 0 0 5px;
   color: #8f8f8f;
 }
+
 #section3 .inner .list {
   display: flex;
-  margin-bottom: 70px;
+  margin-bottom: 100px;
 }
 
 #section3 .inner .list .item {
   width: calc(100% / 4);
   margin-right: 20px;
+  position: relative;
 }
+
+/* #section3 .inner .list .item:hover .bf {
+  opacity: 1;
+  transition: 0.3s;
+} */
+
+#section3 .inner .list .item .bf img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+}
+
+/* #section3 .inner .list .item .bf {
+  width: 100%;
+  height: 50px;
+  background-color: #000000ab;
+  backdrop-filter: blur(3px);
+  color: #fff;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  transition: 0.3s;
+} */
+
+
+/* #section3 .inner .list .item:hover::before {
+  opacity: 1;
+}
+
+#section3 .inner .list .item::before {
+  content: 'Ps';
+  color: #fff;
+  font-size: 30px;
+  text-align: center;
+  line-height: 40px;
+  width: 20%;
+  height: 40px;
+  border-radius: 50px;
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(3px);
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  transition: 0.3s;
+  opacity: 0;
+} */
 
 #section3 .inner .list .item img {
   width: 100%;
@@ -639,6 +688,9 @@ header nav ul li.on {
   -webkit-text-stroke: 2px rgb(0, 0, 0);
 }
 
+#section3 .inner .more summary:hover {
+  -webkit-text-stroke: 2px rgb(199, 8, 8);
+}
 
 /* 🍅footer🍅 */
 
