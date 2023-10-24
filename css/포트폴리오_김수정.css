@@ -92,7 +92,7 @@ header {
   right: 30px;
   transform: translateY(-50%);
   z-index: 99;
-  color: #777777;
+  color: #797979;
 }
 
 header nav ul li {
@@ -389,6 +389,7 @@ header nav ul li.on {
   position: absolute;
   top: -5px;
   left: -5px;
+
 }
 
 #section1 .intro .list .item .txt {
@@ -452,11 +453,19 @@ header nav ul li.on {
   object-fit: cover;
 }
 
-#section2 .item:nth-child(3) .right,
+/* #section2 .item:nth-child(3) .right,
 #section2 .item:nth-child(5) .right {
   width: calc(100% / 2);
   margin-left: 100px;
+} */
+
+#section2 .item:nth-child(3) .right,
+#section2 .item:nth-child(5) .right,
+#section2 .item:nth-child(7) .right {
+  margin: 0 100px 0;
 }
+
+
 
 #section2 .item .backk {
   width: 825px;
@@ -468,6 +477,7 @@ header nav ul li.on {
   object-fit: cover;
 }
 
+#section2 .item:nth-child(3) .backk,
 #section2 .item:nth-child(5) .backk {
   width: 825px;
   height: 550px;
@@ -477,6 +487,17 @@ header nav ul li.on {
   z-index: -1;
   object-fit: cover;
 }
+
+#section2 .item:nth-child(7) .backk {
+  width: 825px;
+  height: 550px;
+  position: absolute;
+  bottom: 120px;
+  right: 80px;
+  z-index: -1;
+  object-fit: cover;
+}
+
 
 #section2 .item .left figure {
   width: 871px;
@@ -501,6 +522,9 @@ header nav ul li.on {
   font-size: 20px;
 }
 
+#section2 .item .right .txt p {
+  width: 260px;
+}
 #section2 .item .right .txt strong {
   width: 100px;
   font-weight: bold;

@@ -38,12 +38,21 @@
 
             let a = $('a');
             let more = $('.more summary');
-            a.mouseover(function () {
-                mouse.style.backgroundColor = '#db45379c';
+            a.mouseenter(function () {
+                $('.mouse').css({
+                    'background-color' : '#db45379c',
+                    'transform' : 'scale(3.0) translateX(3px)',
+                    'transition' : '0.08s'
+                })
+                
             });
 
             a.mouseleave(function () {
-                mouse.style.backgroundColor = '#acacac85';
+                $('.mouse').css({
+                    'background-color' : '#acacac85',
+                    'transform' : 'scale(1) translateX(0px)',
+                    'transition' : '0.08s'
+                })
             })
 
             more.mouseover(function () {
@@ -230,87 +239,20 @@
                     </div><!-- txt end -->
                     <div class="txt">
                         <strong>사용언어</strong>
-                        <p>html, css, java script, photo shop</p>
+                        <p>html, css, javascript, photoshop</p>
                     </div><!-- txt end -->
                     <div class="txt">
                         <strong>참여도</strong>
-                        <p>100% (개인작업)</p>
+                        <p>디자인(100%), 퍼블리싱(100%)</p>
                     </div><!-- txt end -->
                     <div class="btn">
                         <span><a href="https://168kg.github.io/nikon/" target="_blank">홈페이지</a></span>
-                        <span><a href="img/상세페이지/니콘_프로세스페이지.pdf" target="_blank">상세페이지</a></span>
+                        <span><a href="img/상세페이지/니콘_프로세스페이지.pdf" target="_blank">프로세스</a></span>
                     </div><!-- .btn end -->
                 </div><!-- .right end -->
                 <div class="back" data-aos="fade-right">
                     <img src="img/니콘 배경.png" alt="니콘 배경" />
                 </div><!-- .back end -->
-            </div><!-- .item end -->
-
-            <div class="item">
-
-                <div class="right" data-aos="fade-right">
-                    <div class="tit">
-                        <h1>마녀공장</h1>
-                    </div><!-- .title end -->
-                    <div class="txt">
-                        <strong>프로젝트</strong>
-                        <p>웹 사이트 리뉴얼(반응형)</p>
-                    </div><!-- txt end -->
-                    <div class="txt">
-                        <strong>사용언어</strong>
-                        <p>html, css, java script</p>
-                    </div><!-- txt end -->
-                    <div class="txt">
-                        <strong>참여도</strong>
-                        <p>100% (코딩만)</p>
-                    </div><!-- txt end -->
-                    <div class="btn">
-                        <span><a href="https://168kg.github.io/manyo/" target="_blank">홈페이지</a></span>
-                        <span><a href="https://www.figma.com/file/0SNQTdyAz9VrzUcnWcPs7P/%EB%A7%88%EB%85%80%EA%B3%B5%EC%9E%A5?type=design&node-id=0-1&mode=design&t=rHiz7waWKxYIEGHS-0"
-                                target="_blank">피그마</a></span>
-                    </div><!-- .btn end -->
-                </div><!-- .right end -->
-
-                <div class="left" data-aos="flip-down">
-                    <figure>
-                        <img src="img/마녀공장 목업2.png" alt="마녀공장 목업" />
-                    </figure>
-                </div><!-- .left end -->
-                <div class="backk" data-aos="fade-left">
-                    <img src="img/마녀공장 배경.png" alt="마녀공장 배경" />
-                </div><!-- .back end -->
-            </div><!-- .item end -->
-
-            <div class="item">
-                <div class="left" data-aos="flip-down">
-                    <figure>
-                        <img src="img/부산목업최최최종.png" alt="부산 목업" />
-                    </figure>
-                </div><!-- .left end -->
-                <div class="right" data-aos="fade-left">
-                    <div class="tit">
-                        <h1>부산 관광명소</h1>
-                    </div><!-- .title end -->
-                    <div class="txt">
-                        <strong>프로젝트</strong>
-                        <p>부산 관광명소 소개 (모바일)</p>
-                    </div><!-- txt end -->
-                    <div class="txt">
-                        <strong>사용언어</strong>
-                        <p>html, css, react</p>
-                    </div><!-- txt end -->
-                    <div class="txt">
-                        <strong>참여도</strong>
-                        <p>100% (개인작업)</p>
-                    </div><!-- txt end -->
-                    <div class="btn">
-                        <span><a href="https://wonderful-crostata-fa8146.netlify.app/" target="_blank">홈페이지</a></span>
-                        <span><a href="img/상세페이지/부산관광명소 상세페이지.pdf" target="_blank">상세페이지</a></span>
-                    </div><!-- .btn end -->
-                </div><!-- .right end -->
-                <div class="back" data-aos="fade-right">
-                    <img src="img/부산관광 배경.png" alt="부산관광 배경" />
-                </div>
             </div><!-- .item end -->
 
             <div class="item">
@@ -324,15 +266,15 @@
                     </div><!-- txt end -->
                     <div class="txt">
                         <strong>사용언어</strong>
-                        <p>html, css, jquery, photo shop</p>
+                        <p>html, css, jquery, photoshop</p>
                     </div><!-- txt end -->
                     <div class="txt">
                         <strong>참여도</strong>
-                        <p>100% (개인작업)</p>
+                        <p>디자인(100%), 퍼블리싱(100%)</p>
                     </div><!-- txt end -->
                     <div class="btn">
                         <span><a href="https://168kg.github.io/stussy/" target="_blank">홈페이지</a></span>
-                        <span><a href="img/상세페이지/스투시 상세페이지.pdf" target="_blank">상세페이지</a></span>
+                        <span><a href="img/상세페이지/스투시 상세페이지.pdf" target="_blank">프로세스</a></span>
                     </div><!-- .btn end -->
                 </div><!-- .right end -->
 
@@ -346,6 +288,144 @@
                     <img src="img/스투시 배경.png" alt="스투시 배경" />
                 </div>
             </div><!-- .item end -->
+
+            <div class="item">
+            
+                <div class="left" data-aos="flip-down">
+                    <figure>
+                        <img src="img/마녀공장 목업2.png" alt="마녀공장 목업" />
+                    </figure>
+                </div><!-- .left end -->
+
+                <div class="right" data-aos="fade-left">
+                    <div class="tit">
+                        <h1>마녀공장</h1>
+                    </div><!-- .title end -->
+                    <div class="txt">
+                        <strong>프로젝트</strong>
+                        <p>웹 사이트 리뉴얼(반응형)</p>
+                    </div><!-- txt end -->
+                    <div class="txt">
+                        <strong>사용언어</strong>
+                        <p>html, css, javascript</p>
+                    </div><!-- txt end -->
+                    <div class="txt">
+                        <strong>참여도</strong>
+                        <p>퍼블리싱(100%)</p>
+                    </div><!-- txt end -->
+                    <div class="btn">
+                        <span><a href="https://168kg.github.io/manyo/" target="_blank">홈페이지</a></span>
+                        <span><a href="https://www.figma.com/file/0SNQTdyAz9VrzUcnWcPs7P/%EB%A7%88%EB%85%80%EA%B3%B5%EC%9E%A5?type=design&node-id=0-1&mode=design&t=rHiz7waWKxYIEGHS-0"
+                                target="_blank">피그마</a></span>
+                    </div><!-- .btn end -->
+                </div><!-- .right end -->
+                <div class="back" data-aos="fade-right">
+                    <img src="img/마녀공장 배경.png" alt="마녀공장 배경" />
+                </div><!-- .back end -->
+            </div><!-- .item end -->
+
+            <div class="item">
+                <div class="right" data-aos="fade-right">
+                    <div class="tit">
+                        <h1>여행이지</h1>
+                    </div><!-- .title end -->
+                    <div class="txt">
+                        <strong>프로젝트</strong>
+                        <p>웹 사이트 리뉴얼</p>
+                    </div><!-- txt end -->
+                    <div class="txt">
+                        <strong>사용언어</strong>
+                        <p>html, css, figma</p>
+                    </div><!-- txt end -->
+                    <div class="txt">
+                        <strong>참여도</strong>
+                        <p>퍼블리싱(100%)</p>
+                    </div><!-- txt end -->
+                    <div class="btn">
+                        <span><a href="https://168kg.github.io/trip_easy/" target="_blank">홈페이지</a></span>
+                        <span><a href="https://www.figma.com/file/F1z9bVOhpCUViPdqdlHAkn/pc-%EC%97%AC%ED%96%89%ED%8E%98%EC%9D%B4%EC%A7%80?type=design&node-id=0-1&mode=design&t=u3w78vZ9icKI7eYn-0" target="_blank">피그마</a></span>
+                    </div><!-- .btn end -->
+                </div><!-- .right end -->
+
+                <div class="left" data-aos="flip-down">
+                    <figure>
+                        <img src="img/여행이지 목업.png" alt="여행이지 목업" />
+                    </figure>
+                </div><!-- .left end -->
+
+                <div class="backk" data-aos="fade-left">
+                    <img src="img/여행이지 배경.png" alt="여행이지 배경" />
+                </div>
+            </div><!-- .item end -->
+
+
+            <div class="item">
+                <div class="left" data-aos="flip-down">
+                    <figure>
+                        <img src="img/쉐보레 목업.png" alt="쉐보레 목업" />
+                    </figure>
+                </div><!-- .left end -->
+                <div class="right" data-aos="fade-left">
+                    <div class="tit">
+                        <h1>쉐보레 코리아</h1>
+                    </div><!-- .title end -->
+                    <div class="txt">
+                        <strong>프로젝트</strong>
+                        <p>웹 사이트 리뉴얼</p>
+                    </div><!-- txt end -->
+                    <div class="txt">
+                        <strong>사용언어</strong>
+                        <p>html, css, figma</p>
+                    </div><!-- txt end -->
+                    <div class="txt">
+                        <strong>참여도</strong>
+                        <p>디자인(100%), 퍼블리싱(100%)</p>
+                    </div><!-- txt end -->
+                    <div class="btn">
+                        <span><a href="https://168kg.github.io/project/" target="_blank">홈페이지</a></span>
+                        <span><a href="img/상세페이지/쉐보레 프로세스.pdf" target="_blank">프로세스</a></span>
+                    </div><!-- .btn end -->
+                </div><!-- .right end -->
+                <div class="back" data-aos="fade-right">
+                    <img src="img/쉐보레 배경.png" alt="쉐보레 배경" />
+                </div><!-- .back end -->
+            </div><!-- .item end -->
+
+
+            <div class="item">
+                <div class="right" data-aos="fade-right">
+                    <div class="tit">
+                        <h1>부산 관광명소</h1>
+                    </div><!-- .title end -->
+                    <div class="txt">
+                        <strong>프로젝트</strong>
+                        <p>부산 관광명소 소개 (모바일)</p>
+                    </div><!-- txt end -->
+                    <div class="txt">
+                        <strong>사용언어</strong>
+                        <p>html, css, react</p>
+                    </div><!-- txt end -->
+                    <div class="txt">
+                        <strong>참여도</strong>
+                        <p>디자인(100%), 퍼블리싱(100%)</p>
+                    </div><!-- txt end -->
+                    <div class="btn">
+                        <span><a href="https://wonderful-crostata-fa8146.netlify.app/" target="_blank">홈페이지</a></span>
+                        <span><a href="img/상세페이지/부산관광명소 상세페이지.pdf" target="_blank">프로세스</a></span>
+                    </div><!-- .btn end -->
+                </div><!-- .right end -->
+
+                <div class="left" data-aos="flip-down">
+                    <figure>
+                        <img src="img/부산목업최최최종.png" alt="부산 목업" />
+                    </figure>
+                </div><!-- .left end -->
+               
+                <div class="backk" data-aos="fade-left">
+                    <img src="img/부산관광 배경.png" alt="부산관광 배경" />
+                </div>
+            </div><!-- .item end -->
+
         </div><!-- .inner end -->
     </div><!-- #section2 end -->
 
@@ -363,25 +443,25 @@
             <div class="list" data-aos="fade-up">
                 <div class="item">
                     <a href="img/디자인/1그린샐러드.jpg" data-fancybox="images">
-                        <img src="img/디자인/1그린샐러드.jpg" />
+                        <img src="img/디자인/1그린샐러드.jpg" alt="그린샐러드"/>
                     </a>
                 </div><!-- .item end -->
 
                 <div class="item">
                     <a href="img/디자인/2하와이.jpg" data-fancybox="images">
-                        <img src="img/디자인/2하와이.jpg" />
+                        <img src="img/디자인/2하와이.jpg" alt="하와이"/>
                     </a>
                 </div><!-- .item end -->
 
                 <div class="item">
                     <a href="img/디자인/5오보에.jpg" data-fancybox="images">
-                        <img src="img/디자인/5오보에.jpg" />
+                        <img src="img/디자인/5오보에.jpg" alt="오보에" />
                     </a>
                 </div><!-- .item end -->
 
                 <div class="item">
                     <a href="img/디자인/11 상품소개페이지.jpg" data-fancybox="images">
-                        <img src="img/디자인/11 상품소개페이지.jpg" />
+                        <img src="img/디자인/11 상품소개페이지.jpg" alt="상품소개페이지"/>
                     </a>
                 </div><!-- .item end -->
             </div><!-- .list end -->
@@ -389,22 +469,22 @@
             <div class="top" data-aos="fade-up">
                 <div class="item">
                     <a href="img/디자인/3muramasa.jpg" data-fancybox="images">
-                        <img src="img/디자인/3muramasa.jpg" />
+                        <img src="img/디자인/3muramasa.jpg" alt="muramasa"/>
                     </a>
                 </div><!-- .item end -->
                 <div class="item">
                     <a href="img/디자인/4네일.jpg" data-fancybox="images">
-                        <img src="img/디자인/4네일.jpg" />
+                        <img src="img/디자인/4네일.jpg" alt="네일"/>
                     </a>
                 </div><!-- .item end -->
                 <div class="item">
                     <a href="img/디자인/6summer-sale 일러.jpg" data-fancybox="images">
-                        <img src="img/디자인/6summer-sale 일러.jpg" />
+                        <img src="img/디자인/6summer-sale 일러.jpg" alt="썸머세일" />
                     </a>
                 </div><!-- .item end -->
                 <div class="item">
                     <a href="img/디자인/7이벤트 포토샵.jpg" data-fancybox="images">
-                        <img src="img/디자인/7이벤트 포토샵.jpg" />
+                        <img src="img/디자인/7이벤트 포토샵.jpg" alt="이벤트"/>
                     </a>
                 </div><!-- .item end -->
             </div><!-- .top end -->
@@ -415,35 +495,35 @@
                 <div class="bottom">
                     <div class="item">
                         <a href="img/디자인/8맥쥬파티 포토샵.jpg" data-fancybox="images">
-                            <img src="img/디자인/8맥쥬파티 포토샵.jpg" />
+                            <img src="img/디자인/8맥쥬파티 포토샵.jpg" alt="맥주파티"/>
                         </a>
                     </div><!-- .item end -->
                     <div class="item">
                         <a href="img/디자인/9타투 일러스트.jpg" data-fancybox="images">
-                            <img src="img/디자인/9타투 일러스트.jpg" />
+                            <img src="img/디자인/9타투 일러스트.jpg" alt 타투/>
                         </a>
                     </div><!-- .item end -->
                     <div class="item">
                         <a href="img/디자인/10 기술서 포토샵.jpg" data-fancybox="images">
-                            <img src="img/디자인/10 기술서 포토샵.jpg" />
+                            <img src="img/디자인/10 기술서 포토샵.jpg" alt="기술서"/>
                         </a>
                     </div><!-- .item end -->
                     <div class="item">
                         <a href="img/디자인/12 홈패브릭 포토샵.jpg" data-fancybox="images">
-                            <img src="img/디자인/12 홈패브릭 포토샵.jpg" />
+                            <img src="img/디자인/12 홈패브릭 포토샵.jpg" alt="홈패브릭" />
                         </a>
                     </div><!-- .item end -->
                 </div><!-- .bottom end -->
                 <div class="bn_list">
                     <div class="bn">
                         <a href="img/디자인/배너1 포토샵.jpg" data-fancybox="images">
-                            <img src="img/디자인/배너1 포토샵.jpg" />
+                            <img src="img/디자인/배너1 포토샵.jpg" alt="배너1"/>
                         </a>
                     </div><!-- .bn end -->
 
                     <div class="bn">
                         <a href="img/디자인/배너2 포토샵.jpg" data-fancybox="images">
-                            <img src="img/디자인/배너2 썸네일 포토샵.jpg" />
+                            <img src="img/디자인/배너2 썸네일 포토샵.jpg" alt="배너2" />
                         </a>
                     </div><!-- .bn end -->
                 </div><!-- .bn_list end -->
@@ -452,17 +532,17 @@
 
                     <div class="fig">
                         <a href="img/디자인/오난코리아 피그마.jpg" data-fancybox="images">
-                            <img src="img/디자인/오난코리아 피그마.jpg" />
+                            <img src="img/디자인/오난코리아 피그마.jpg" alt="오난코리아"/>
                         </a>
                     </div><!-- .fig end -->
                     <div class="fig">
                         <a href="img/디자인/장인가구 피그마.jpg" data-fancybox="images">
-                            <img src="img/디자인/장인가구 피그마.jpg" />
+                            <img src="img/디자인/장인가구 피그마.jpg" alt="장인가구"/>
                         </a>
                     </div><!-- .fig end -->
                     <div class="fig">
                         <a href="img/디자인/바이컬러 가글 피그마.jpg" data-fancybox="images">
-                            <img src="img/디자인/바이컬러 가글 피그마.jpg" />
+                            <img src="img/디자인/바이컬러 가글 피그마.jpg" alt="바이컬러"/>
                         </a>
                     </div><!-- .fig end -->
                 </div><!-- .bn_list -->
