@@ -38,22 +38,51 @@
 
             let a = $('a');
             let more = $('.more summary');
-            a.mouseenter(function () {
+            let fancy = $('#section3 .inner .item a');
+            let bn = $('#section3 .inner .bn_list a')
+
+            a.mouseover(function(){
+                mouse.style.backgroundColor = '#db45379c';    
+            });
+
+            a.mouseleave(function(){
+                mouse.style.backgroundColor = '#acacac85';
+            });
+
+            bn.mouseenter(function () {
                 $('.mouse').css({
                     'background-color' : '#db45379c',
                     'transform' : 'scale(3.0) translateX(3px)',
-                    'transition' : '0.08s'
+                    'transition' : '0.1s'
                 })
                 
             });
 
-            a.mouseleave(function () {
+            bn.mouseleave(function () {
                 $('.mouse').css({
                     'background-color' : '#acacac85',
                     'transform' : 'scale(1) translateX(0px)',
                     'transition' : '0.08s'
                 })
-            })
+            });
+            
+
+            fancy.mouseenter(function () {
+                $('.mouse').css({
+                    'background-color' : '#db45379c',
+                    'transform' : 'scale(3.0) translateX(3px)',
+                    'transition' : '0.1s'
+                })
+                
+            });
+
+            fancy.mouseleave(function () {
+                $('.mouse').css({
+                    'background-color' : '#acacac85',
+                    'transform' : 'scale(1) translateX(0px)',
+                    'transition' : '0.08s'
+                })
+            });
 
             more.mouseover(function () {
                 mouse.style.backgroundColor = '#db45379c';
@@ -466,7 +495,7 @@
                 </div><!-- .item end -->
             </div><!-- .list end -->
 
-            <div class="top" data-aos="fade-up">
+            <div class="top list" data-aos="fade-up">
                 <div class="item">
                     <a href="img/디자인/3muramasa.jpg" data-fancybox="images">
                         <img src="img/디자인/3muramasa.jpg" alt="muramasa"/>
@@ -492,7 +521,7 @@
 
             <details class="more">
                 <summary>more</summary>
-                <div class="bottom">
+                <div class="bottom list">
                     <div class="item">
                         <a href="img/디자인/8맥쥬파티 포토샵.jpg" data-fancybox="images">
                             <img src="img/디자인/8맥쥬파티 포토샵.jpg" alt="맥주파티"/>
