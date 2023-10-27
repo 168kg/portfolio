@@ -357,6 +357,31 @@ header nav ul li.on {
   margin-top: 10px;
   color: rgb(143, 143, 143);
 }
+#section1 .intro .me .btn {
+  margin-top: 10px;
+}
+
+#section1 .intro .me .btn span {
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  border: 1px solid #000;
+  border-radius: 50px;
+  margin-right: 5px;
+  line-height: 30px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+#section1 .intro .me .btn span a {
+  display: inline-block;
+  width: 70px;
+}
+
+#section1 .intro .me .btn span:hover {
+  background-color: #000;
+  color: #fff;
+}
 
 #section1 .intro .list {
   margin-right: 100px;
